@@ -2,64 +2,46 @@
 <html>
 <head>
     <title>UlquiorraTCG</title>
-    <style>
-    .sprite {
-        width: 50px;
-        height: 50px;
-    }
-    .deck {
-
-    }
-    .player-info {
-        font-family: sans-serif;
-        font-size: 24px;
-    }
-    .achievements {
-        font-family: sans-serif;
-        font-size: 16px;
-    }
-    th {
-        font-size: 24px;
-        font-family: arial;
-    }
-    td {
-        vertical-align: top;
-        font-family: sans-serif;
-    }
-    h4 {
-        font-family: sans-serif;
-    }
-    h5 {
-        font-size: 16px;
-        font-family: sans-serif;
-    }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h3 class="player-info"> Jeremy Lim </h3>
-    <img src="profilepic.jpg" alt="profilepic" style="float:left;width:300px;height:220px;"></img>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    <pre style="font-family: arial; font-size: 16px;"> 2019 CP: 57/?? </pre>
-    <ul class="achievements">
-        <li> 2015 Finalist Nationals
-        <li> 2015 Top 16 World Championships
-        <li> 2016 Top 8 Melbourne Regionals
-        <li> 2017 Top 16 Sydney Regionals
-        <li> 2018 Top 16 Brisbane Regionals
-    </ul>
-    <h4>Zoroark-GX / Lycanroc-GX
+    <div>
+        <h2 id="player-info"> Jeremy Lim </h2>
+    </div>
+    <div>
+        <img src="profilepic.jpg" alt="profilepic" id="profilepic"></img>
+    </div>
+    <div>
+        <p id="CP"> 2019 CP: 152/250 </p>
+        <ul id="achievements">
+            <li> 2015 Finalist Nationals
+            <li> 2015 Top 16 World Championships
+            <li> 2016 Top 8 Melbourne Regionals
+            <li> 2017 Top 16 Sydney Regionals
+            <li> 2018 Top 16 Brisbane Regionals
+            <li> 2019 Top 16 Brisbane Regionals
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Decks</button>
+        <div class="dropdown-content">
+            <a href="#deck1">Zoroark-GX / Lycanroc-GX
+                <img class="sprite" src="PokemonShuffleSprites/637.png"></img>
+                <img class="sprite" src="PokemonShuffleSprites/1079.png"></img></a>
+            <a href="#deck2">Zoroark-GX / Garbodor
+                <img class="sprite" src="PokemonShuffleSprites/637.png"></img>
+                <img class="sprite" src="PokemonShuffleSprites/635.png"></img></a>
+            <a href="#deck3">Malamar / Necrozma-GX
+                <img class="sprite" src="PokemonShuffleSprites/811.png"></img>
+                <img class="sprite" src="PokemonShuffleSprites/1134.png"></img></a>
+        </div>
+    </div>
+    <a href="#want-list"><button class="dropbtn">Want List</button></a>
+
+    <h3 class="headings">Tournament Decks</h3>
+    <h4 id="deck1">Zoroark-GX / Lycanroc-GX
         <img class="sprite" src="PokemonShuffleSprites/637.png"></img>
         <img class="sprite" src="PokemonShuffleSprites/1079.png"></img>
     </h4>
@@ -72,10 +54,10 @@
     </br> 4x Zorua
     </br> 4x Zoroark-GX
     </br> 3x Rockruff
-    </br> 3x Lycanroc
+    </br> 3x Lycanroc-GX
     </br> 3x Tapu Lele-GX
     </br> 1x Latios
-    </br> 1x Diancie Prism
+    </br> 1x Diancie Prism Star
     </br> 1x Buzzwole
     </br> 1x Tapu Koko
     </br> 1x Oranguru
@@ -103,7 +85,50 @@
     </br> 4x Double Colorless Energy
 </br> </tr> </table>
 
-    <h4>Zoroark-GX / Garbodor-GX
+<h5> 1st Place Top Ryde League Challenge </h5>
+    <table class="deck">
+    <tr>
+        <th> Pokémon </th><th> Trainers </th><th> Energy </th>
+    </tr> <tr>
+    <td>
+    </br> 4x Zorua
+    </br> 4x Zoroark-GX
+    </br> 3x Rockruff
+    </br> 2x Lycanroc-GX
+    </br> 3x Tapu Lele-GX
+    </br> 1x Giratina
+    </br> 1x Ditto Prism Star
+    </br>
+    </br></td><td>
+    </br> 3x Professor Elm's Lecture
+    </br> 3x Cynthia
+    </br> 3x Guzma
+    </br> 2x Professor Kukui
+    </br> 1x Acerola
+    </br> 1x Judge
+    </br> 1x Mallow
+    </br> 4x Ultra Ball
+    </br> 3x Timer Ball
+    </br> 2x Max Potion
+    </br> 1x Field Blower
+    </br> 3x Choice Band
+    </br> 1x Rescue Stretcher
+    </br> 1x Multi Switch
+    </br> 1x Switch
+    </br> 1x Counter Gain
+    </br> 2x Devoured Field
+    </br>
+    </br></td><td>
+    </br> 5x Fighting Energy
+    </br> 4x Double Colorless Energy
+</br> </tr> </table>
+
+    <h5> 2019 Brisbane Regionals </h5>
+    <p class="paragraph-text"> -1 Max Potion
+    </br> -1 Fighting Energy
+    </br> +2 Enhanced Hammer</p>
+
+    <h4 id="deck2">Zoroark-GX / Garbodor-GX
         <img class="sprite" src="PokemonShuffleSprites/637.png"></img>
         <img class="sprite" src="PokemonShuffleSprites/635.png"></img>
     </h4>
@@ -144,5 +169,53 @@
     </br> 4x Psychic Energy
     </br> 4x Double Colorless Energy
 </br> </tr> </table>
+
+    <h3 class="headings">Other Decks</h3>
+    <h4 id="deck3">Malamar / Necrozma-GX
+        <img class="sprite" src="PokemonShuffleSprites/811.png"></img>
+        <img class="sprite" src="PokemonShuffleSprites/1134.png"></img>
+    </h4>
+    <h5> Penrith League Challenge </h5>
+    <table class="deck">
+    <tr>
+        <th> Pokémon </th><th> Trainers </th><th> Energy </th>
+    </tr> <tr>
+    <td>
+    </br> 4x Inkay
+    </br> 4x Malamar
+    </br> 2x Deoxys
+    </br> 1x Necrozma-GX
+    </br> 2x Marshadow-GX
+    </br> 1x Chimecho
+    </br> 1x Marshadow
+    </br> 1x Mimikyu
+    </br> 1x Tapu Lele-GX
+    </br> 1x Dawn Wings Necrozma-GX
+    </br>
+    </br></td><td>
+    </br> 4x Cynthia
+    </br> 4x Guzma
+    </br> 3x Lillie
+    </br> 1x Pokemon Fan Club
+    </br> 4x Ultra Ball
+    </br> 4x Mysterious Treasure
+    </br> 1x Friend Ball
+    </br> 1x Nest Ball
+    </br> 3x Acro Bike
+    </br> 2x Rescue Stretcher
+    </br> 1x Pal Pad
+    </br> 3x Escape Board
+    </br> 1x Escape Rope
+    </br>
+    </br></td><td>
+    </br> 10x Psychic Energy
+    </br> </tr> </table>
+
+<h3 id="want-list">Want List</h3>
+<p class="paragraph-text">2 Alolan Ninetales-GX LOT
+</br>2 Marshadow-GX
+</br>2 Necrozma-GX</p>
+
+<p>Blog by Jeremy Lim</p>
 </body>
 </html>
