@@ -1,118 +1,66 @@
-@import url('https://fonts.googleapis.com/css?family=Asap:400.500.700');
+@import url('https://fonts.googleapis.com/css?family=Asap:400.500.700'); */
 * {
-    box-sizing: border-box;
+    display: block;
+    align-items: center;
     font-family: Asap, sans-serif;
-    background-color: #292C34;
-    color: white;
+    color: black;
     scroll-behavior: smooth;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #profilepic {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
-    height: 220px;
+    width: 375px;
+    height: 230px;
 }
 
-.sprite {
-    background-color: inherit;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    top: 15px;
-    right: -10px;
+#search {
+    width: 400px;
+    height: 25px;
 }
 
-.deck {
-    background-color: red;
+.card {
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    max-width: 124px;
+    margin: 12px;
+    transition: .15s all ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+    a {
+        text-decoration: none;
+        padding: 12px;
+        color: #03A9F4;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            height: 100px;
+        }
+        small {
+            font-size: 10px;
+            padding: 4px;
+        }
+    }
 }
 
-#player-info {
-    font-size: 24px;
-    color: white;
+.sprites {
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+.text {
     text-align: center;
 }
 
-#achievements {
-    font-size: 16px;
-    color: white;
-}
-
-#CP {
-    text-align: center;
-    font-size: 16px;
-    color: white;
-}
-
-.headings {
-    color: white;
-}
-
-.paragraph-text {
-    font-family: Asap, sans-serif;
-    color: white;
-}
-
-/* Dropdown Button */
-.dropbtn {
-  background-color: #DD3C12;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 240px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    background-color: #FEFCFA;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+.wrapper {
     display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #E04D27;}
-
-th {
-    font-size: 24px;
-    font-family: arial;
-    color: white;
-}
-
-td {
-    vertical-align: top;
-    color: white;
-}
-
-h4 {
-    color: white;
-}
-
-h5 {
-    font-size: 16px;
-    color: white;
+    max-width: 450px;
+    flex-wrap: wrap;
+    padding-top: 12px;
 }
