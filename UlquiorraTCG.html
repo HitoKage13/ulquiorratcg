@@ -2,220 +2,88 @@
 <html>
 <head>
     <title>UlquiorraTCG</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/
+smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+    <!-- <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/
+libs/jqueryui/1.10.4/jquery-ui.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
 </head>
 
 <body>
-    <div>
-        <h2 id="player-info"> Jeremy Lim </h2>
-    </div>
-    <div>
-        <img src="profilepic.jpg" alt="profilepic" id="profilepic"></img>
-    </div>
-    <div>
-        <p id="CP"> 2019 CP: 152/250 </p>
-        <ul id="achievements">
-            <li> 2015 Finalist Nationals
-            <li> 2015 Top 16 World Championships
-            <li> 2016 Top 8 Melbourne Regionals
-            <li> 2017 Top 16 Sydney Regionals
-            <li> 2018 Top 16 Brisbane Regionals
-            <li> 2019 Top 16 Brisbane Regionals
-        </ul>
-    </div>
+    <div id="root">
+        <div class="tabs">
+            <ul>
+                <!-- Tabs for each task -->
+                <li :class="toShow == 'home' ? 'is-active':''"><a @click="toShow = 'home'">Home</a></li>
+                <li :class="toShow == 'decks' ? 'is-active':''"><a @click="toShow = 'decks'">Decks</a></li>
+                <li :class="toShow == 'blog' ? 'is-active':''"><a @click="toShow = 'blog'">Blog</a></li>
+            </ul>
+        </div>
 
-    <div class="dropdown">
-        <button class="dropbtn">Decks</button>
-        <div class="dropdown-content">
-            <a href="#deck1">Zoroark-GX / Lycanroc-GX
-                <img class="sprite" src="PokemonShuffleSprites/637.png"></img>
-                <img class="sprite" src="PokemonShuffleSprites/1079.png"></img></a>
-            <a href="#deck2">Zoroark-GX / Garbodor
-                <img class="sprite" src="PokemonShuffleSprites/637.png"></img>
-                <img class="sprite" src="PokemonShuffleSprites/635.png"></img></a>
-            <a href="#deck3">Malamar / Necrozma-GX
-                <img class="sprite" src="PokemonShuffleSprites/811.png"></img>
-                <img class="sprite" src="PokemonShuffleSprites/1134.png"></img></a>
+        <div class="tabContainer">
+            <!-- Home tab -->
+            <div class="tabContent" id="home" v-if="toShow == 'home'">
+                <img src="profilepic.jpg" alt="profilepic" id="profilepic"></img>
+                <article class="message is-info">
+                    <div class="message-body">
+                        Hey my name is Jeremy and I'm from Sydney, Australia.
+                        I've been playing Pokemon competitively for almost 6 years now and
+                        this is my blog to showcase the decks I play and tournament runs I go through!
+                        My other hobbies include: Photography, pool, coding, tennis and gaming!
+                        My goals this season are to: get Day 2 at an IC, get Top 8 APAC and to earn a paid trip to Germany!
+                    </div>
+                </article>
+
+                <p class="text"> <b>2019 CP: 152/250</b> </p>
+                <p class="text"> <b>2019 Q2: 105</b> </p>
+                </br>
+                <p class="text"> <b>Achievements:</b> </p>
+                <div v-for="achievement in achievements">
+                    <ul class="text">{{ achievement }}</ul>
+                </div>
+                </br>
+            </div>
+
+            <!-- Decks tab -->
+            <div class="tabContent" id="decks" v-if="toShow == 'decks'">
+                WIP, decks I play and lists will be on here!
+                </br><input id="search" placeholder="Search by deck" v-model="search">
+                </br> Finds: {{ search }}
+                <div class="wrapper">
+                    <div class="card" v-for="deck in filteredList" @click="showModal = true; id = deck.id">
+                        <div v-for="img in deck.sprites">
+                            <img class="sprites" v-bind:src="img"/>
+                        </div>
+                        </br>
+                        </br>
+                        </br>
+                        </br> <b> {{ deck.name }} </b>
+                        </br> {{ deck.tournament }}
+                        </br> {{ deck.date }}
+                    </div>
+
+                    <modal v-if="showModal" @close="showModal = false">
+                        <template slot="header">{{ deckCol[id].name }} ({{ deckCol[id].tournament}})</template>
+                        <template slot="body" v-for="Pokemon in deckList[id].Pokemon"><ul>{{ Pokemon }}</ul></template>
+                        <template slot="body" v-for="Trainers in deckList[id].Trainers"><ul>{{ Trainers }}</ul></template>
+                        <template slot="body" v-for="Energy in deckList[id].Energy"><ul>{{ Energy }}</ul></template>
+                    </modal>
+                </div>
+            </div>
+
+            <!-- Blog tab -->
+            <div class="tabContent" id="blog" v-if="toShow == 'blog'">
+                WIP, but there will be blog posts added on here about tournaments,
+                observations and what not!
+            </div>
+
         </div>
     </div>
-    <a href="#want-list"><button class="dropbtn">Want List</button></a>
 
-    <h3 class="headings">Tournament Decks</h3>
-    <h4 id="deck1">Zoroark-GX / Lycanroc-GX
-        <img class="sprite" src="PokemonShuffleSprites/637.png"></img>
-        <img class="sprite" src="PokemonShuffleSprites/1079.png"></img>
-    </h4>
-    <h5> Top 8 Newcastle League Cup </h5>
-    <table class="deck">
-    <tr>
-        <th> Pokémon </th><th> Trainers </th><th> Energy </th>
-    </tr> <tr>
-    <td>
-    </br> 4x Zorua
-    </br> 4x Zoroark-GX
-    </br> 3x Rockruff
-    </br> 3x Lycanroc-GX
-    </br> 3x Tapu Lele-GX
-    </br> 1x Latios
-    </br> 1x Diancie Prism Star
-    </br> 1x Buzzwole
-    </br> 1x Tapu Koko
-    </br> 1x Oranguru
-    </br>
-    </br></td><td>
-    </br> 3x Cynthia
-    </br> 3x Guzma
-    </br> 2x Acerola
-    </br> 2x Lillie
-    </br> 2x Judge
-    </br> 1x Professor Kukui
-    </br> 1x Pokemon Fan Club
-    </br> 1x Mallow
-    </br> 4x Ultra Ball
-    </br> 4x Nest Ball
-    </br> 2x Timer Ball
-    </br> 1x Field Blower
-    </br> 3x Choice Band
-    </br> 1x Rescue Stretcher
-    </br> 1x Multi Switch
-    </br> 1x Pal Pad
-    </br>
-    </br></td><td>
-    </br> 4x Fighting Energy
-    </br> 4x Double Colorless Energy
-</br> </tr> </table>
-
-<h5> 1st Place Top Ryde League Challenge </h5>
-    <table class="deck">
-    <tr>
-        <th> Pokémon </th><th> Trainers </th><th> Energy </th>
-    </tr> <tr>
-    <td>
-    </br> 4x Zorua
-    </br> 4x Zoroark-GX
-    </br> 3x Rockruff
-    </br> 2x Lycanroc-GX
-    </br> 3x Tapu Lele-GX
-    </br> 1x Giratina
-    </br> 1x Ditto Prism Star
-    </br>
-    </br></td><td>
-    </br> 3x Professor Elm's Lecture
-    </br> 3x Cynthia
-    </br> 3x Guzma
-    </br> 2x Professor Kukui
-    </br> 1x Acerola
-    </br> 1x Judge
-    </br> 1x Mallow
-    </br> 4x Ultra Ball
-    </br> 3x Timer Ball
-    </br> 2x Max Potion
-    </br> 1x Field Blower
-    </br> 3x Choice Band
-    </br> 1x Rescue Stretcher
-    </br> 1x Multi Switch
-    </br> 1x Switch
-    </br> 1x Counter Gain
-    </br> 2x Devoured Field
-    </br>
-    </br></td><td>
-    </br> 5x Fighting Energy
-    </br> 4x Double Colorless Energy
-</br> </tr> </table>
-
-    <h5> 2019 Brisbane Regionals </h5>
-    <p class="paragraph-text"> -1 Max Potion
-    </br> -1 Fighting Energy
-    </br> +2 Enhanced Hammer</p>
-
-    <h4 id="deck2">Zoroark-GX / Garbodor-GX
-        <img class="sprite" src="PokemonShuffleSprites/637.png"></img>
-        <img class="sprite" src="PokemonShuffleSprites/635.png"></img>
-    </h4>
-    <h5> Top 4 Penrith League Cup </h5>
-    <table class="deck">
-    <tr>
-        <th> Pokémon </th><th> Trainers </th><th> Energy </th>
-    </tr> <tr>
-    <td>
-    </br> 4x Zorua
-    </br> 4x Zoroark-GX
-    </br> 3x Trubbish
-    </br> 3x Garbodor
-    </br> 2x Tapu Lele-GX
-    </br> 2x Latios
-    </br> 1x Marshadow
-    </br> 1x Slugma
-    </br> 1x Magcargo
-    </br>
-    </br></td><td>
-    </br> 3x Cynthia
-    </br> 3x Guzma
-    </br> 2x Acerola
-    </br> 2x Lillie
-    </br> 2x Judge
-    </br> 1x Pokemon Fan Club
-    </br> 4x Ultra Ball
-    </br> 2x Nest Ball
-    </br> 2x Mysterious Treasure
-    </br> 1x Timer Ball
-    </br> 2x Field Blower
-    </br> 2x Choice Band
-    </br> 1x Rescue Stretcher
-    </br> 2x Pal Pad
-    </br> 2x Devoured Field
-    </br>
-    </br></td><td>
-    </br> 4x Psychic Energy
-    </br> 4x Double Colorless Energy
-</br> </tr> </table>
-
-    <h3 class="headings">Other Decks</h3>
-    <h4 id="deck3">Malamar / Necrozma-GX
-        <img class="sprite" src="PokemonShuffleSprites/811.png"></img>
-        <img class="sprite" src="PokemonShuffleSprites/1134.png"></img>
-    </h4>
-    <h5> Penrith League Challenge </h5>
-    <table class="deck">
-    <tr>
-        <th> Pokémon </th><th> Trainers </th><th> Energy </th>
-    </tr> <tr>
-    <td>
-    </br> 4x Inkay
-    </br> 4x Malamar
-    </br> 2x Deoxys
-    </br> 1x Necrozma-GX
-    </br> 2x Marshadow-GX
-    </br> 1x Chimecho
-    </br> 1x Marshadow
-    </br> 1x Mimikyu
-    </br> 1x Tapu Lele-GX
-    </br> 1x Dawn Wings Necrozma-GX
-    </br>
-    </br></td><td>
-    </br> 4x Cynthia
-    </br> 4x Guzma
-    </br> 3x Lillie
-    </br> 1x Pokemon Fan Club
-    </br> 4x Ultra Ball
-    </br> 4x Mysterious Treasure
-    </br> 1x Friend Ball
-    </br> 1x Nest Ball
-    </br> 3x Acro Bike
-    </br> 2x Rescue Stretcher
-    </br> 1x Pal Pad
-    </br> 3x Escape Board
-    </br> 1x Escape Rope
-    </br>
-    </br></td><td>
-    </br> 10x Psychic Energy
-    </br> </tr> </table>
-
-<h3 id="want-list">Want List</h3>
-<p class="paragraph-text">2 Alolan Ninetales-GX LOT
-</br>2 Marshadow-GX
-</br>2 Necrozma-GX</p>
-
-<p>Blog by Jeremy Lim</p>
+    <script src="app.js"></script>
 </body>
-</html>
+<html>
