@@ -61,6 +61,6 @@
 .wrapper {
     display: block;
     max-width: 450px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding-top: 12px;
 }
