@@ -7,8 +7,8 @@
 smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
-    <!-- <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/
 libs/jqueryui/1.10.4/jquery-ui.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
 </head>
@@ -51,6 +51,7 @@ libs/jqueryui/1.10.4/jquery-ui.min.js"></script> -->
             <!-- Decks tab -->
             <div class="tabContent" id="decks" v-if="toShow == 'decks'">
                 WIP, decks I play and lists will be on here!
+                </br> - Have to sort by name
                 </br><input id="search" placeholder="Search by deck" v-model="search">
                 </br> Finds: {{ search }}
                 <div class="wrapper">
@@ -67,10 +68,10 @@ libs/jqueryui/1.10.4/jquery-ui.min.js"></script> -->
                     </div>
 
                     <modal v-if="showModal" @close="showModal = false">
-                        <template slot="header">{{ deckCol[id].name }} ({{ deckCol[id].tournament}})</template>
-                        <template slot="body" v-for="Pokemon in deckList[id].Pokemon"><ul>{{ Pokemon }}</ul></template>
-                        <template slot="body" v-for="Trainers in deckList[id].Trainers"><ul>{{ Trainers }}</ul></template>
-                        <template slot="body" v-for="Energy in deckList[id].Energy"><ul>{{ Energy }}</ul></template>
+                        <template slot="header">{{ deckCol[deckCol.length - 1 - id].name }} ({{ deckCol[deckCol.length - 1 - id].tournament}})</template>
+                        <template slot="body" v-for="Pokemon in deckList[deckList.length - 1 - id].Pokemon"><ul>{{ Pokemon }}</ul></template>
+                        <template slot="body" v-for="Trainers in deckList[deckList.length - 1 - id].Trainers"><ul>{{ Trainers }}</ul></template>
+                        <template slot="body" v-for="Energy in deckList[deckList.length - 1 - id].Energy"><ul>{{ Energy }}</ul></template>
                     </modal>
                 </div>
             </div>
@@ -79,6 +80,13 @@ libs/jqueryui/1.10.4/jquery-ui.min.js"></script> -->
             <div class="tabContent" id="blog" v-if="toShow == 'blog'">
                 WIP, but there will be blog posts added on here about tournaments,
                 observations and what not!
+                </br>
+                </br>
+                <article id="blogPost" v-bind:class="getClass(post.id)" class="message" v-for="post in blogPosts">
+                    <b>{{ post.title}}</b>
+                    <div class="message-body" v-html="post.text">
+                    </div>
+                </article>
             </div>
 
         </div>
