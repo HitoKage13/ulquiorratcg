@@ -172,6 +172,67 @@ var app = new Vue({
             ["4 Fighting Energy","4 Double Colorless Energy"]),
         ],
         blogPosts: [
+            new Post(2,"05/02/19","A Dangerous Rogue Away From Victory",`The past weekend,
+            I was lucky enough to gain a top 8 and top 4 placing at Maitland and Penrith
+            respectively. At both tournaments, I played two variants of the tried-and-true
+            Zoroark/Lycanroc deck; each to counter the expected meta. It is clear that
+            Zoroark/Lycanroc is the BDIF of the SUM-LOT format, having innate consistency
+            and strong mid-game and late-game potential. My base list will be up on my decks
+            profile very soon, with each tech change explained below. </br> </br>
+            <b>Maitland Cup</b> </br> </br> Tech Changes: </br> -1 Max Potion </br> -1 Multi Switch
+            </br> +1 Oranguru </br> +1 Bodybuilding Dumbbells </br> </br> Expectations:
+            Lost March, Spread Malamar, GasKan </br> </br> Lost March WW </br> ZoroRoc/Vile WLT
+            </br> GasKan WW </br> ZoroRoc/Vile WLW </br> ID </br> T8: BuzzGarb Shrine LL </br>
+            </br> From my experiences at Newcastle LC the month prior, I believed
+            that these decks will come in larger numbers due to their popularity
+            in the Central Coast region. The decks were very easy to play, with
+            Spread Malamar more of a counter brought by Sydney players to deal
+            with the low HP single prize meta. I was fortunate enough to make
+            top cut safely through a combination of luck and knowledge of the matchups.
+            Unfortunately, my tournament run ended with a hard counter in top 8 with
+            no outs to winning (mostly due to the fact that I didn't run Weavile).
+            </br> </br> The Bodybuilding Dumbbells came in clutch in round 1 to Lost March,
+            which enabled Zoroark-GXs to survive a 240 damage Lost March attack.
+            However, its primary purpose was against GasKan; as with Alolan Muk
+            and Dumbbells on a Zoroark-GX, it walled Marshadow-GX from attacking
+            and required Necrozma-GX to have 5 Psychic Energies to OHKO. Although
+            I played against 1 GasKan, I wasn't able to abuse this combo and instead
+            had to play out the prize race. The Oranguru was added as a last minute
+            call to counter Mill brought by two top Sydney players, however proved
+            to be a useless card in the tournament.
+            </br> </br> </b>Penrith Cup</b> </br>
+            </br> Tech Changes: </br> -1 Rockruff </br> -1 Tapu Lele-GX
+            </br> -1 Giratina </br> -1 Max Potion </br> -4 Fighting Energy
+            </br> +1-1 Weavile </br> +1 Sableye </br> +1 Oranguru
+            </br> +4 Unit Energy FDY </br> </br> </br> Expectations: Mill,
+            ZoroRoc, Spread Malamar </br> </br> ZoroRoc WW </br> ZoroDeciTales WW
+            </br> Spread Malamar WLW </br> ID </br> ID </br> T4: Spread Malamar LWL
+            </br> </br> After the success of Mill (winning the tournament),
+            Brent and my focus changed to finding a way to beat it; which came in the
+            form of Sableye and Oranguru. The win condition was quite convoluted,
+            which required Sableye to use Limitation to lock the opponent from using
+            Supporters (disabling many of the Energy removal and win conditions).
+            Furthermore, Oranguru could be used late game alongside a Judge to
+            recover the Energies lost to removal and set up the Sableye lock again.
+            The purpose of Oranguru with Sableye was very strong against Mill, as
+            they would very likely deck out at that point. In the scenario they
+            played Switch to use Unown HAND to win, Alolan Muk can be a counterplay
+            in order to block that win condition. I also used Weavile to increase my
+            matchups against GasKan, mirror and Buzz Shrine, yet it came in handy
+            against ZoroDeciTales too. I managed to make it into top 4, whilst Brent
+            failed with the same 60 due to variance and dead draws, but once again,
+            I fail to make it past the first round of top cut; even though the mistake
+            was due to my own misplays. My opponent deserved to win regardless and went
+            on to win the tournament. </br> </br> It may be the time to retire ZoroRoc,
+            due to my excessive usage of it this season. Although it's easily a strong
+            play, I may still consider it for Top Ryde; playing a variety of decks
+            can also help improve my analytical skills and achieve better results
+            than I would hope. In terms of the Germany IC race, I am now ranked
+            7th or 8th going into the second weekend of cups, with 2 placings
+            secured. It is now a matter of getting further into top cut (first
+            or second) in order to improve my standing, but I'm definitely
+            feeling the effects of 'every point matters'. We'll see how
+            it goes soon enough!`, ["Tournament Report"]),
             new Post(1,"22/01/19","Q2 Cups",`I have 4 League Cups coming up,
             all of which are important to my Germany IC goal. With an excess of 2 tournaments,
             I can afford to play a complex deck in one of them to try and squeeze out a stronger run.
