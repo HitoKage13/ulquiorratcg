@@ -204,7 +204,7 @@ var app = new Vue({
             </br> Tech Changes: </br> -1 Rockruff </br> -1 Tapu Lele-GX
             </br> -1 Giratina </br> -1 Max Potion </br> -4 Fighting Energy
             </br> +1-1 Weavile </br> +1 Sableye </br> +1 Oranguru
-            </br> +4 Unit Energy FDY </br> </br> </br> Expectations: Mill,
+            </br> +4 Unit Energy FDY </br> </br> Expectations: Mill,
             ZoroRoc, Spread Malamar </br> </br> ZoroRoc WW </br> ZoroDeciTales WW
             </br> Spread Malamar WLW </br> ID </br> ID </br> T4: Spread Malamar LWL
             </br> </br> After the success of Mill (winning the tournament),
