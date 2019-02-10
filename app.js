@@ -58,10 +58,6 @@ Vue.component('modal', {
     }
 });
 
-Vue.component('achievement',{
-    template: `<slot></slot>`
-});
-
 var app = new Vue({
     el: '#root',
     data: {
@@ -75,14 +71,18 @@ var app = new Vue({
         "2016 Top 8 Melbourne Regionals", "2017 Top 16 Sydney Regionals",
         "2018 Top 16 Brisbane Regionals","2019 Top 16 Brisbane Regionals"],
         deckCol: [
-            new Deck('Malamar / Necrozma-GX', 10, ["PokemonShuffleSprites/811.png","PokemonShuffleSprites/1134.png"],
-            "Q2 Cup Testing", "N/A"),
-            new Deck('Zoroark-GX / Lycanroc-GX', 9, ["PokemonShuffleSprites/637.png","PokemonShuffleSprites/1079.png"],
+            new Deck('Pikachu & Zekrom-GX', 12, ["PokemonShuffleSprites/31.png","PokemonShuffleSprites/720.png"],
+            "IC Testing", "N/A"),
+            new Deck('Malamar / Ultra-Necrozma-GX', 11, ["PokemonShuffleSprites/637.png","PokemonShuffleSprites/1079.png"],
+            "IC Testing", "N/A"),
+            new Deck('Malamar Spread', 10, ["PokemonShuffleSprites/811.png","PokemonShuffleSprites/1119.png"],
+            "Q2 Week 2 Cups", "09/02/19"),
+            new Deck('Malamar / Necrozma-GX', 9, ["PokemonShuffleSprites/811.png","PokemonShuffleSprites/1134.png"],
             "Q2 Cup Testing", "N/A"),
             new Deck('Passimian Spread', 8, ["PokemonShuffleSprites/1100.png","PokemonShuffleSprites/1119.png"],
             "Q2 Cup Testing", "N/A"),
-            new Deck('Malamar Spread', 7, ["PokemonShuffleSprites/811.png","PokemonShuffleSprites/1119.png"],
-            "Top 4 Q2 Newcastle Challenge", "12/01/19"),
+            new Deck('Zoroark-GX / Lycanroc-GX', 7, ["PokemonShuffleSprites/637.png","PokemonShuffleSprites/1079.png"],
+            "Q2 Week 1 Cups", "02/02/19"),
             new Deck('Quad Mega Manectric-EX', 6, ["PokemonShuffleSprites/882.png"],
             "2015 World Championships", "N/A"),
             new Deck('Zoroark-GX / Alolan Ninetales-GX / Decidueye-GX', 5, ["PokemonShuffleSprites/637.png","PokemonShuffleSprites/1041.png", "PokemonShuffleSprites/1055.png"],
@@ -99,31 +99,43 @@ var app = new Vue({
             "Top 8 Q1 Newcastle Cup", "08/09/18")
         ],
         deckList: [
-            new List(10,["4 Inkay","4 Malamar","2 Necrozma-GX","1 Dawn Wings Necrozma-GX","1 Marshadow-GX",
+            new List(12,["2 Raikou","2 Pikachu & Zekrom-GX","2 Zeraora-GX","2 Zapdos",
+            "2 Tapu Lele-GX","1 Tapu Koko-GX","1 Tapu Koko Prism Star","---"],
+            ["4 Guzma","3 Lillie","3 Cynthia","3 Volkner","1 Erika's Hospitality",
+            "4 Ultra Ball","4 Electropower","4 Nest Ball","4 Energy Switch",
+            "3 Choice Band","2 Aether Paradise Conservation Area","1 Thunder Mountain Prism Star","---"],
+            ["12 Lightning Energy"]),
+            new List(11,["4 Inkay","4 Malamar", "2 Ultra Necrozma-GX", "2 Giratina",
+            "2 Jirachi","1 Marshadow-GX","1 Tapu Lele-GX","---"],
+            ["4 Lillie","3 Guzma","3 Cynthia","1 Erika's Hospitality","4 Ultra Ball",
+            "4 Mysterious Treasure","3 Nest Ball","2 Rescue Stretcher","2 Choice Band",
+            "2 Escape Board","2 Switch","1 Escape Rope","2 Viridian Forest","---"],
+            ["7 Psychic Energy","3 Metal Energy","1 Beast Energy Prism Star"]),
+            new List(10, ["4 Inkay","4 Malamar","3 Tapu Koko","2 Giratina","1 Onix","1 Oranguru SUM",
+            "1 Marshadow SLG","1 Necrozma-GX","1 Tapu Lele SMPR","---"],
+            ["4 Cynthia","4 Guzma","4 Lillie","4 Ultra Ball",
+            "4 Mysterious Treasure","2 Nest Ball","3 Acro Bike",
+            "2 Rescue Stretcher","3 Shrine of Punishment","---"],
+            ["8 Psychic Energy", "4 Double Colorless Energy"]),
+            new List(9,["4 Inkay","4 Malamar","2 Necrozma-GX","1 Dawn Wings Necrozma-GX","1 Marshadow-GX",
             "1 Giratina","1 Deoxys","1 Mimikyu","1 Tapu Lele-GX","1 Marshadow SLG","1 Chimecho","---"],
             ["4 Lillie","3 Guzma","3 Cynthia","4 Ultra Ball",
             "4 Mysterious Treasure","2 Nest Ball","4 Acro Bike",
             "2 Rescue Stretcher","4 Escape Board","1 Escape Rope","1 Altar of the Moone","---"],
             ["10 Psychic Energy"]),
-            new List(9,["4 Zorua","4 Zoroark-GX","3 Rockruff","3 Lycanroc-GX",
-            "3 Tapu Lele-GX","1 Giratina","1 Ditto Prism Star","1 Alolan Muk","---"],
-            ["4 Professor Elm's Lecture","3 Cynthia","3 Guzma","2 Professor Kukui","1 Acerola","1 Judge",
-            "1 Mallow","4 Ultra Ball","3 Timer Ball","1 Max Potion",
-            "3 Choice Band","1 Rescue Stretcher","1 Multi Switch",
-            "1 Switch","1 Counter Gain","2 Devoured Field","---"],
-            ["4 Fighting Energy","4 Double Colorless Energy"]),
             new List(8, ["4 Tapu Koko","2 Passimian SUM","2 Passimian UPR","1 Slugma CES","1 Slugma LOT",
             "2 Magcargo","1 Oranguru SUM","1 Marshadow SLG","1 Latios SLG","1 Tapu Lele SMPR","---"],
             ["4 Guzma","4 Lillie","3 Guzma","2 Professor Kukui","4 Ultra Ball",
             "4 Nest Ball","4 Acro Bike","3 Rescue Stretcher","1 Escape Rope","1 Switch",
             "3 Choice Band","3 Shrine of Punishment","---"],
             ["4 Counter Energy", "4 Double Colorless Energy"]),
-            new List(7, ["4 Inkay","4 Malamar","2 Tapu Koko","2 Giratina","1 Onix","1 Oranguru SUM",
-            "1 Marshadow SLG","1 Necrozma-GX","1 Tapu Lele SMPR","---"],
-            ["4 Cynthia","4 Guzma","4 Lillie","4 Ultra Ball",
-            "4 Mysterious Treasure","2 Nest Ball","4 Acro Bike",
-            "2 Rescue Stretcher","3 Shrine of Punishment","---"],
-            ["8 Psychic Energy", "4 Double Colorless Energy"]),
+            new List(7,["4 Zorua","4 Zoroark-GX","3 Rockruff","2 Lycanroc-GX",
+            "3 Tapu Lele-GX","1 Giratina","1 Ditto Prism Star","1 Alolan Muk","---"],
+            ["4 Professor Elm's Lecture","3 Cynthia","3 Guzma","2 Professor Kukui","2 Acerola","1 Judge",
+            "1 Mallow","4 Ultra Ball","3 Timer Ball","1 Max Potion",
+            "3 Choice Band","1 Rescue Stretcher","1 Multi Switch",
+            "1 Switch","1 Counter Gain","2 Devoured Field","---"],
+            ["4 Fighting Energy","4 Double Colorless Energy"]),
             new List(6, ["4 Manectric-EX","4 M Manectric-EX","2 Keldeo-EX","2 Shaymin-EX",
             "2 Zapdos","1 Mr. Mime","1 Bunnelby","---"],
             ["4 Professor Sycamore","4 N","2 Colress","2 Lysandre","4 Ultra Ball",
@@ -238,31 +250,25 @@ var app = new Vue({
             I can afford to play a complex deck in one of them to try and squeeze out a stronger run.
             Some decks I've considered are: Passimian Spread, Malamar Spread,
             GasKan and Zoroark/Lycanroc.
-            </br>
-            </br> Cup 1: Maitland - Buzzwole, Lost March
+            </br> </br> Cup 1: Maitland - Buzzwole, Lost March
             </br> Cup 2: Penrith - Zoroark, Blacephalon, Gardevoir
             </br> Cup 3: Newcastle - Buzzwole, Lost March
             </br> Cup 4: Top Ryde - Zoroark, Malamar, Blacephalon
-            </br>
-            </br> Passimian Spread: Great matchups against Zoroark variants, Blacephalon
+            </br> </br> Passimian Spread: Great matchups against Zoroark variants, Blacephalon
             and GasKan; decks I believe will be popular in the first cup. My teammate,
             Christian Hasbani, showed me the deck and list late in December
             and has been popular in Queensland tournament this month.
-            </br>
-            </br> Malamar Spread: The deck is great against the Newcastle meta and
+            </br> </br> Malamar Spread: The deck is great against the Newcastle meta and
             has a lot of ways to cheese out wins against every matchup.
-            </br>
-            </br> GasKan: Christian built the list and is a strong
+            </br> </br> GasKan: Christian built the list and is a strong
             and safe contender for an easy Top 8. It has some weaknesses to Spread unfortunately,
             but it should be enough to get wins against top decks.
-            </br>
-            </br> Zoroark/Lycanroc: A very safe deck that has 50-50 against the field
+            </br> </br> Zoroark/Lycanroc: A very safe deck that has 50-50 against the field
             and a deck I am truly comfortable with from a top 16 finish at Brisbane
             Regionals this season.
             The new list runs Alolan Muk to provide a favourable matchup vs GasKan,
             Granbull, mill; but struggles against the new Wailord & Magikarp Tag Team.
-            </br>
-            </br> The lists will be added to the decks tab soon. Stay tuned!`, ["Testing"]),
+            </br> </br> The lists will be added to the decks tab soon. Stay tuned!`, ["Testing"]),
             new Post(0,"22/01/19","Launch",`I spent the past 12 hours working on building this
             website from scratch and I hope to produce some of my observations,
             tournament runs and tidbits soon!`, ["Personal"])
