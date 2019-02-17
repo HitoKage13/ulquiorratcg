@@ -184,6 +184,54 @@ var app = new Vue({
             ["4 Fighting Energy","4 Double Colorless Energy"]),
         ],
         blogPosts: [
+            new Post(3,"17/02/19","(Psychic) Recharging the Mind",`As I am waiting
+            for my flight at Melbourne Airport back to reality, I reflect on my past
+            weekend competing at the 2019 Oceania International Championships.
+            It was an incredibly important event for my competitive career, and one
+            of the worst feelings I felt was to overcome any regret or disappointment
+            of failing my own set expectations and milestones. I was underprepared,
+            picking a deck other Australians did simply to have a sense of security of CP.
+            What was the point of picking a secure deck, when it flopped throughout the
+            whole country? It was great when the Australian contingent selected a deck with
+            a spicy tech, which evoked a sense of collectivity. Ultra Malamar with
+            Acerola joined the ranks of American and European Zapdos (although we
+            definitely could've created our own version of Zapdos). </br>
+            </br> My matchups were as follows: </br> Ultra Malamar WW
+            </br> Tool Drop LWT </br> Ultra Malamar WLT </br> Ultra Malamar LWL
+            </br> Ultra Malamar WW </br> Ultra Malamar WW </br> Granbull WW
+            </br> Zapdos/Jirachi/Jolteon LWL </br> Ultra Malamar LWL </br>
+            </br> I started to pick up steam around rounds 5-7, getting a strong
+            win streak and placing myself with a great chance to get at least
+            Top 64. Unfortunately, I dropped a card after round 7, which meant
+            that I was getting a game loss in round 8. I had a great lead in
+            game 1, which could’ve allowed me to easily win both games and went
+            onto my win-and-in, however an extremely unlucky case of starting
+            Tapu Lele-GX and having Acerola prized in game 3 of round 8 removed
+            any chances of me winning (unless my opponent dead drew, of course).
+            Round 9 was also unfortunate, playing an unflavoured mirror match and
+            getting donked in game 3 with a very anti-climactic turn of events.
+            This meant I had no chance at going to the Berlin IC in late April,
+            a failure I must learn from, in order to do well in Perth and Sydney
+            Regionals. Starting 4-1-2 is quite a strong run, as winning round 8
+            would have meant I was safe to play out the last round, a luxury
+            often not open to others around my table. </br>
+            </br> Going forwards, I am unlikely to continue playing Ultra
+            Malamar, as the mirror match with Acerola or Koko is very stressful
+            to play against; not because of my chances but rather it can come
+            down to luck of the draw at times and whoever draws the cards at the
+            right time can outright win the game. I am much more confident in
+            playing a comfortable deck such as Zoroark/Lycanroc or Zapdos/Jirachi,
+            with a higher skill ceiling and a more aggressive start to many games.
+            I will have to see if I am going for the NAIC stipends or continue
+            my quest to gain strong placings in the 2019 season, but it should
+            test my resillience and will at improving in the game. It is not
+            about winning all the time, sometimes simply gaining the pleasure
+            of working with a group of friends on a decklist to take tournaments
+            by storm or even supporting them in their successes, which is why I
+            still play the game with no second thoughts. With Top 2, Top 8 and
+            Top 16 placings within my team, it can be considered a huge victory,
+            even if I wasn't the one behind the win. Next time, my friends
+            could be the ones supporting my victories. Who knows?`,["Tournament Report"]),
             new Post(2,"05/02/19","A Dangerous Rogue Away From Victory",`The past weekend,
             I was lucky enough to gain a top 8 and top 4 placing at Maitland and Penrith
             respectively. At both tournaments, I played two variants of the tried-and-true
