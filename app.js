@@ -204,17 +204,17 @@ var app = new Vue({
             win streak and placing myself with a great chance to get at least
             Top 64. Unfortunately, I dropped a card after round 7, which meant
             that I was getting a game loss in round 8. I had a great lead in
-            game 1, which could’ve allowed me to easily win both games and went
+            game 1, which could've allowed me to easily win both games and went
             onto my win-and-in, however an extremely unlucky case of starting
             Tapu Lele-GX and having Acerola prized in game 3 of round 8 removed
             any chances of me winning (unless my opponent dead drew, of course).
-            Round 9 was also unfortunate, playing an unflavoured mirror match and
+            Round 9 was also unfortunate, playing an unfavoured mirror match and
             getting donked in game 3 with a very anti-climactic turn of events.
             This meant I had no chance at going to the Berlin IC in late April,
             a failure I must learn from, in order to do well in Perth and Sydney
             Regionals. Starting 4-1-2 is quite a strong run, as winning round 8
             would have meant I was safe to play out the last round, a luxury
-            often not open to others around my table. </br>
+            not open to others around my table. </br>
             </br> Going forwards, I am unlikely to continue playing Ultra
             Malamar, as the mirror match with Acerola or Koko is very stressful
             to play against; not because of my chances but rather it can come
