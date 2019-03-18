@@ -69,7 +69,8 @@ var app = new Vue({
         "is-warning","is-danger"],
         achievements: ["2015 Finalist Nationals","2015 Top 16 World Championships",
         "2016 Top 8 Melbourne Regionals", "2017 Top 16 Sydney Regionals",
-        "2018 Top 16 Brisbane Regionals","2019 Top 16 Brisbane Regionals"],
+        "2018 Top 16 Brisbane Regionals","2019 Top 16 Brisbane Regionals",
+        "2019 Top 8 Perth Regionals"],
         deckCol: [
             new Deck('Malamar / Ultra-Necrozma-GX', 13, ["PokemonShuffleSprites/637.png","PokemonShuffleSprites/1079.png"],
             "2019 Perth Regionals", "16/03/19"),
