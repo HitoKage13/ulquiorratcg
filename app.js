@@ -106,7 +106,7 @@ var app = new Vue({
             ["4 Lillie","3 Cynthia","3 Guzma","1 Acerola","4 Ultra Ball",
             "4 Mysterious Treasure","3 Nest Ball","1 Rescue Stretcher","2 Choice Band",
             "2 Escape Board","3 Switch","3 Viridian Forest","---"],
-            ["7 Psychic Energy","3 Metal Energy","1 Beast Energy Prism Star"])
+            ["7 Psychic Energy","3 Metal Energy","1 Beast Energy Prism Star"]),
             new List(12,["2 Raikou","2 Pikachu & Zekrom-GX","2 Zeraora-GX","2 Zapdos",
             "2 Tapu Lele-GX","1 Tapu Koko-GX","1 Tapu Koko Prism Star","---"],
             ["4 Guzma","3 Lillie","3 Cynthia","3 Volkner","1 Erika's Hospitality",
