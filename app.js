@@ -71,6 +71,8 @@ var app = new Vue({
         "2016 Top 8 Melbourne Regionals", "2017 Top 16 Sydney Regionals",
         "2018 Top 16 Brisbane Regionals","2019 Top 16 Brisbane Regionals"],
         deckCol: [
+            new Deck('Malamar / Ultra-Necrozma-GX', 13, ["PokemonShuffleSprites/637.png","PokemonShuffleSprites/1079.png"],
+            "2019 Perth Regionals", "16/03/19"),
             new Deck('Pikachu & Zekrom-GX', 12, ["PokemonShuffleSprites/31.png","PokemonShuffleSprites/720.png"],
             "IC Testing", "N/A"),
             new Deck('Malamar / Ultra-Necrozma-GX', 11, ["PokemonShuffleSprites/637.png","PokemonShuffleSprites/1079.png"],
@@ -99,6 +101,12 @@ var app = new Vue({
             "Top 8 Q1 Newcastle Cup", "08/09/18")
         ],
         deckList: [
+            new List(13,["4 Inkay","4 Malamar", "2 Ultra Necrozma-GX", "2 Giratina",
+            "2 Jirachi","1 Marshadow-GX","1 Tapu Lele-GX","---"],
+            ["4 Lillie","3 Cynthia","3 Guzma","1 Acerola","4 Ultra Ball",
+            "4 Mysterious Treasure","3 Nest Ball","1 Rescue Stretcher","2 Choice Band",
+            "2 Escape Board","3 Switch","3 Viridian Forest","---"],
+            ["7 Psychic Energy","3 Metal Energy","1 Beast Energy Prism Star"])
             new List(12,["2 Raikou","2 Pikachu & Zekrom-GX","2 Zeraora-GX","2 Zapdos",
             "2 Tapu Lele-GX","1 Tapu Koko-GX","1 Tapu Koko Prism Star","---"],
             ["4 Guzma","3 Lillie","3 Cynthia","3 Volkner","1 Erika's Hospitality",
@@ -184,6 +192,97 @@ var app = new Vue({
             ["4 Fighting Energy","4 Double Colorless Energy"]),
         ],
         blogPosts: [
+            new Post(4,"14/03/19","Teaming Up for Perth",`I'm writing this while
+            on my 5-hour flight to Perth, and have had a lengthy break from
+            Pokemon ever since the Oceania IC. It seemed like ages since I
+            have competed as a large-scale event, and I am beyond excited to
+            clinch another strong placing at a major event. The meta has shifted
+            quite drastically between the 3 major tournaments in the SUM-TEU
+            format, and I am writing now to anticipate what might be strong
+            contenders for Perth and even the Berlin IC. </br> </br>
+            The Oceania IC was positioned very favourably for Zapdos/Jirachi to
+            take the win, as I believed Team DDG had legitimately found a gap in
+            the metagame to exploit the weaknesses of other top decks. This was
+            also in combination with the assumption that Zapdos was a weak play
+            due to Japan results completely dominated Pikachu/Zekrom. I believe
+            this was further from the truth, as Zapdos had a strong matchup to
+            Pikachu/Zekrom, especially with its amazing prize trade. It was a
+            close matchup against Ultra Malamar, due to Giratina pulling the
+            weight and a late Sky-Scorching Light allowing a prize lead. I think
+            with the addition of multiple Escape Ropes, this allowed Zapdos to
+            take multiple Malamar knockouts, which will weaken their board state.
+            </br> </br> I expected much more Zoroark/Lycanroc at the IC, but it was
+            scared off by all the Ultra Malamar AND Pikachu/Zekrom players, which
+            meant only the few who used it were likely to do well due to the
+            abundance of Zapdos/Jirachi. One notable tech I considered and
+            dismissed almost a day later, was Lucario-GX. It was a very efficient
+            way to handle the Pikachu/Zekrom decks, however I thought that you
+            needed to have 2 Riolus benched at all times to threaten the KO,
+            which left less room for Zoroarks and Lycanrocs. Furthermore, it
+            wasn't compatible with Ditto, which meant that its utility was
+            acking even more. Finally, it had a Psychic weakness, which only
+            served to make the Ultra Malamar matchup worse. These factors led
+            me to believe that Lucario was simply Trade fodder at best, with
+            occasional uses against weaker Pikachu/Zekrom players. In hindsight,
+            Zoroark/Lycanroc WAS the play for the Oceania IC, but was it a good
+            play for the next few tournaments? </br> </br>
+            Cannes SPE and Collinsville Regionals both highlighted a different
+            shift in the metagame, and events that Australians will look towards
+            to finalise their plays. Cannes SPE showed that Vileplume was a
+            viable anti-meta call against all the Zapdos, Ultra Malamar and
+            Pikachu/Zekrom decks running around, with Hoopa to handle Zoroark
+            variants. My US friend showed me a Vileplume list before its inception,
+            in which I agreed that it would be a secret call. Now that the archetype
+            is out, I believe that there will be a higher usage rate for cards
+            like Jolteon-GX to counter it. This, of course, makes Lycanroc a lot
+            stronger. Furthermore, Cannes SPE showed an interesting anomaly that
+            Europeans did not use Zoroark variants (as EU is often associated with
+            Zoroark due to its consistency and ability to play many complex
+            techs and strategies). Instead, Collinsville Regionals had a very
+            high Zoroark usage rate, which led to Blacephalon winning the event.
+            </br> </br> Does this make Blacephalon a strong contender in the meta?
+            No, I don't believe so. Blacephalon simply exploited another gap in
+            the metagame in which Zoroqrk had such a large usage rate and Zapdos
+            being less used. This is also shown with players, such as Daniel
+            Altavilla, who used the Zoroark/Lycanroc/Lucario over the Zapdos/Jirachi
+            list. Even Zach Lesage noted that he played Blacephalon not because
+            it was an amazing metacall, but because it was his pet deck.
+            Zoroark/Lycanroc can very much win against Blacephalon using either
+            a Giratina tech or Garbodor to capitalise on skipping Beast Ring
+            turns or cementing the prize race in your favour. </br> </br>
+            With these analysis, it can be noted that the rise and fall of Zoroark
+            is due to the good players opting to use other decks, Ultra Malamar
+            becoming a less of a strong play (due to its horrible mirrors often
+            ending in ties) and the threat of Vileplume imminent. I don't think
+            anyone in Oceania would use Mill, besides Aaron van der Kolk, although
+            I would still have a one card tech for that matchup just in case.
+            Brent Tonisson proposed a secret play for Perth, rather a different
+            take at Zoroark. Splitting off into Garbodor and Lycanroc, this means
+            that it will allow you to handle the meta decks through a toolbox-like
+            manner, using Garbodor for late game prize trades against Lucario,
+            Ultra Malamar and Zapdos, whilst Lycanroc stilll destroys Pikachu/Zekrom
+            and opposing Zoroarks. With Giratina still in the list, this gives you
+            an out to Blacephalon, while Alolan Muk can be used against Zapdos,
+            Granbull and Pikachu/Zekrom. Oranguru is included as an out to mill,
+            but can definitely be a flexible spot in case other matchups are needed
+            to be improved. Suggestions include: Switch, Cynthia, 3rd Rockruff.
+            However, there is a glaring weakness in the deck in that there is no
+            Prism Star Stadium removal, which means Wondrous Labyrinth completely
+            destroys this deck, Thunder Mountain will exist to make the matchup
+            a lot harder and Heat Factory can allow Blacephalon to maintain its
+            consistency. The deck is by no means heavily tested, but I believe it
+            may be a strong rogue for the event, given the power of Garbodor when
+            no one else is expecting it. </br> </br> The matchup spreads are listed
+            below: </br> Mirror w/o Lucario 45/55 </br> Mirror w/ Lucario 55/45
+            </br> Ultra Malamar 60-40 </br> Zapdos/Jirachi 65-35 </br>
+            Pikachu/Zekrom 55-45 </br> Blacephalon 50-50 </br> Vileplume Mill 45-55
+            </br> Lost March 40-60 </br> Buzzwole/Lucario 40-60 </br> </br>
+            This is a larger piece of writing than what I am accustomed to, but long
+            flights like what I am on, it is a pleasure to write out my thoughts and
+            observations into the hobby I enjoy and to document my journey and
+            progression as a competitor. Thanks for reading, and I will write a
+            report at the conclusion of the Regionals! (on the flight home probably)`,
+            ["Analysis"]),
             new Post(3,"17/02/19","(Psychic) Recharging the Mind",`As I am waiting
             for my flight at Melbourne Airport back to reality, I reflect on my past
             weekend competing at the 2019 Oceania International Championships.
