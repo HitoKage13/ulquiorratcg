@@ -193,6 +193,89 @@ var app = new Vue({
             ["4 Fighting Energy","4 Double Colorless Energy"]),
         ],
         blogPosts: [
+            new Post(5,"19/03.19","Stellar Wishes of Competition",`Perth Regionals
+            has come and gone, and I am very happy about my tournament run the
+            past weekend. It was my first Top 8 in a modern-era Regional and was
+            a huge boost to my confidence as a competitive player. Despite this,
+            I never would've fathomed myself using Ultra Malamar again, especially
+            after the shock loss at the Oceania Internationals. Despite the success
+            I had, I'm likely to use Zapdos or ZoroRoc for the next few tournaments,
+            unless Ultra Malamar becomes more of a safety net for me. Before I
+            get into the tournament insights, I'd have to say that this weekend
+            pushes me into the Day 2 race, even if it was only a slight bump in
+            the rankings to 22nd. This is also a boost into the Columbus stipend
+            race, which means I could potential go for that. The biggest win this
+            weekend, although it was inevitable, was my Worlds invite, as I can
+            now look forward to attending the 2019 World Championships in
+            Washington DC! I still have to sort out my Term 2 university exams,
+            in order to make it, but miracles can happen, so fingers crossed!
+            </br> </br> Why did I choose Ultra Malamar despite my comfort in
+            Zoroark decks? It was moreso the discovery that everyone tended towards
+            ZoroRoc as a safe pick for the tournament, especially since they all
+            expected Zapdos to be prevalent. This again feeds into the stigma
+            that Australia, and by that respect Oceania, is always 2-3 events
+            behind other regions in terms of the metagame, and this is no different.
+            I wanted a strong matchup against Zoroark, and the only clear deck that
+            would do exactly my request was Ultra Malamar. Of course, the other deck
+            that can fulfil it was Buzzwole/Lucario-GX, however I believe it just
+            concedes to most decks and would never be a great play in a tournament
+            of this magnitude and scale. Furthermore, I didn’t expect many Ultra
+            Malamar decks, and so I didn’t have to worry about the mirror as much;
+            it was a good thing I didn’t encounter any at all in the tournament. I
+            played the same 60 as Christian, and switched only a card from both
+            our IC lists (the Cynthia for a 3rd Nest Ball). This was great, as it
+            surprisingly boosts the consistency a lot turn 1, and had increased
+            chances of 3 Inkays favourably. Starting Jirachi turn 1 is also often
+            a great guarantee of a strong setup, and I would even argue that playing
+            3 Jirachi would be amazing in the deck. </br> </br> My matchups over
+            the weekend were: </br> R1 ZoroRoc WW </br> R2 Blacephalon LL
+            </br> R3 Zapdos/Jolteon/Buzzwole-GX WW </br> R4 ZoroRoc LWT
+            </br> R5 Blacephalon WW </br> R6 ZoroRoc/Cario LWW </br>
+            R7 Zapdos/Buzzwole/Nihilego WW </br> T8 ZoroRoc/Cario WLL </br>
+            </br> I did have to highlight an amazing line of play I made in Round
+            1, as I believe it would inevitably ended up in a tie if I wasn't
+            committed to it. I had an amazing start in game 2, but fizzled out in
+            my draw after turn 1. I had an Ultra Necrozma benched and 3 Malamars
+            out. I had managed to charge up my Ultra Necrozma with basic Psychic
+            every turn, holding onto a Beast Energy for when it mattered. My opponent
+            assumed going for the Malamars would cripple my chain of attackers, but
+            it simply allowed me to create a checkmate position in two turns. When
+            I was ready, I attacked into the Zoroark with Beast Energy taking 2 prizes.
+            Now, with 1 Malamar benched, he went for it, leaving me with a lone Ultra
+            Necrozma and a Beast Energy attached to it. Because of game 1, where I
+            opted for using Guzma to end the game rather than Sky Scorching Light
+            (meaning he would likely do it again in game 2), my opponent clumsily
+            played more Pokemon than needed, which played right into my 2 prize
+            turn alongside a Guzma on Alolan Muk. With a 2 prize equaliser and an
+            Alolan Muk active, this meant that my opponent had to use Acerola to
+            remove it from play in order to attack into the Ultra Necrozma. This
+            safely allows me to chain a second Guzma for the set on Tapu Lele-GX
+            the next turn. </br> </br> I also got a bit lucky in my last round,
+            where I played the top Oceanic player in my win-and-in. Unfortunately,
+            my opponent was docked and dead drew completely, meaning I had a
+            guaranteed entry into Day 2! The win was huge for me, because over
+            the past 5 Regionals in the modern era, I have had 3 Top 16s
+            (losing 2 win-and-ins). The Top 8 run was overdue! Due to my excitement,
+            I had a great night partying with friends and having a celebratory
+            dinner and drinks. </br> </br> In Top 8, game 1 went as perfect as it should,
+            as I hit almost everything I need to clean up the game in around 6 turns.
+            Game 2 was a clumsier one, as I may have made a misplay to get a Psychic over
+            a Metal in order to set up attackers. However, in hindsight, I probably
+            made the right play, as I had the Viridian Forest in play and didn't
+            anticipate using Cynthia into a dead hand. Game 3, I started
+            Marshadow-GX, and my opponent had a strong turn 2, meaning I had
+            nearly no chance at winning. Again I believe I may have made a tiny
+            misplay, which I shouldn’t have attached the Psychic Energy on the
+            Marshadow (which was sort of a blunder knowing that Alolan Muk would've
+            hit the field), but it couldn't be stopped anyways. </br> </br>
+            My next tournaments after Perth would be the League Challenge this
+            upcoming Saturday, which is nothing to write home about, and the
+            League Cups coming up in April. It is nice to take a break from the
+            competitive circuit, but all Perth has done is fuel my competitive
+            drive to do well and maintain my consistency at Regionals. Luckily,
+            Sydney Regionals is fast approaching, and I will hopefully be prepared
+            for when the new format is legal for the tournament!`,
+            ["Tournament Report","Meta Analysis"]),
             new Post(4,"14/03/19","Teaming Up for Perth",`I'm writing this while
             on my 5-hour flight to Perth, and have had a lengthy break from
             Pokemon ever since the Oceania IC. It seemed like ages since I
@@ -243,7 +326,7 @@ var app = new Vue({
             high Zoroark usage rate, which led to Blacephalon winning the event.
             </br> </br> Does this make Blacephalon a strong contender in the meta?
             No, I don't believe so. Blacephalon simply exploited another gap in
-            the metagame in which Zoroqrk had such a large usage rate and Zapdos
+            the metagame in which Zoroark had such a large usage rate and Zapdos
             being less used. This is also shown with players, such as Daniel
             Altavilla, who used the Zoroark/Lycanroc/Lucario over the Zapdos/Jirachi
             list. Even Zach Lesage noted that he played Blacephalon not because
@@ -283,7 +366,7 @@ var app = new Vue({
             observations into the hobby I enjoy and to document my journey and
             progression as a competitor. Thanks for reading, and I will write a
             report at the conclusion of the Regionals! (on the flight home probably)`,
-            ["Analysis"]),
+            ["Deck Analysis", "Meta Analysis"]),
             new Post(3,"17/02/19","(Psychic) Recharging the Mind",`As I am waiting
             for my flight at Melbourne Airport back to reality, I reflect on my past
             weekend competing at the 2019 Oceania International Championships.
@@ -416,7 +499,8 @@ var app = new Vue({
             Regionals this season.
             The new list runs Alolan Muk to provide a favourable matchup vs GasKan,
             Granbull, mill; but struggles against the new Wailord & Magikarp Tag Team.
-            </br> </br> The lists will be added to the decks tab soon. Stay tuned!`, ["Testing"]),
+            </br> </br> The lists will be added to the decks tab soon. Stay tuned!`,
+            ["Meta Analysis","Testing"]),
             new Post(0,"22/01/19","Launch",`I spent the past 12 hours working on building this
             website from scratch and I hope to produce some of my observations,
             tournament runs and tidbits soon!`, ["Personal"])
