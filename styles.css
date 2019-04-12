@@ -24,7 +24,9 @@
 
 .card {
     box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
-    max-width: 124px;
+    /* max-width: 124px; */
+    width: 30%;
+    min-width: 124px;
     margin: 12px;
     transition: .15s all ease-in-out;
     &:hover {
@@ -59,8 +61,12 @@
 }
 
 .wrapper {
-    display: block;
-    max-width: 450px;
-    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    /* max-width: 450px; */
+    min-width: 450px;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
     padding-top: 12px;
 }
