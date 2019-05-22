@@ -72,6 +72,8 @@ var app = new Vue({
         "2018 Top 16 Brisbane Regionals","2019 Top 16 Brisbane Regionals",
         "2019 Top 8 Perth Regionals"],
         deckCol: [
+            new Deck('Zapdos / Ultra Beasts', 18, ["PokemonShuffleSprites/150.png","PokemonShuffleSprites/1128.png","PokemonShuffleSprites/1127.png"],
+            "2019 Sydney Regionals", "18/05/19"),
             new Deck('Zapdos / Lycanroc-GX', 17, ["PokemonShuffleSprites/150.png","PokemonShuffleSprites/1153.png"],
             "Champion Q3 Penrith League Cup", "28/04/19"),
             new Deck('Zapdos / Pikachu & Zekrom-GX', 16, ["PokemonShuffleSprites/150.png","PokemonShuffleSprites/31.png","PokemonShuffleSprites/720.png"],
@@ -110,6 +112,15 @@ var app = new Vue({
             "Top 8 Q1 Newcastle Cup", "08/09/18")
         ],
         deckList: [
+            new List(18,["4 Jirachi","3 Zapdos","1 Buzzwole","1 Nihilego",
+            "1 Tapu Koko-GX","1 Tapu Koko Prism Star","1 Marshadow","1 Mew",
+            "1 Absol","---"],
+            ["4 Lillie","4 Guzma","3 Cynthia","4 Electropower","4 Nest Ball",
+            "3 Ultra Ball","3 Switch","2 Escape Rope","2 Rescue Stretcher",
+            "2 Choice Band","2 Escape Board","3 Viridian Forest",
+            "1 Shrine of Punishment","---"],
+            ["6 Lightning Energy","1 Fighting Energy","1 Psychic Energy",
+            "1 Beast Energy Prism Star"]),
             new List(17,["4 Jirachi","3 Zapdos","2 Rockruff","2 Lycanroc-GX",
             "1 Tapu Koko-GX","1 Tapu Koko Prism Star","1 Buzzwole",
             "1 Marshadow","---"],
