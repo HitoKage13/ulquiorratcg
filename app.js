@@ -70,7 +70,7 @@ var app = new Vue({
         achievements: ["2015 Finalist Nationals","2015 Top 16 World Championships",
         "2016 Top 8 Melbourne Regionals", "2017 Top 16 Sydney Regionals",
         "2018 Top 16 Brisbane Regionals","2019 Top 16 Brisbane Regionals",
-        "2019 Top 8 Perth Regionals"],
+        "2019 Top 8 Perth Regionals","2019 Top 32 Sydney Regionals"],
         deckCol: [
             new Deck('Zapdos / Ultra Beasts', 18, ["PokemonShuffleSprites/150.png","PokemonShuffleSprites/1128.png","PokemonShuffleSprites/1127.png"],
             "2019 Sydney Regionals", "18/05/19"),
