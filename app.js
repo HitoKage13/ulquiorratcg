@@ -1,5 +1,3 @@
-// import * from 'vue-app.js'
-
 class Deck {
     constructor(name, id, sprites, tournament, date) {
         this.name = name;
