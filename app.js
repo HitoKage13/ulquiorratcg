@@ -1,4 +1,4 @@
-import * from vue-app
+import * from 'vue-app.js'
 
 class Deck {
     constructor(name, id, sprites, tournament, date) {
