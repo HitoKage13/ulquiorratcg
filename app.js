@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+import * from 'vue-app.js'
+
+=======
+>>>>>>> parent of 2597163... Put all text documents in another file
+=======
+>>>>>>> parent of 25971638... Put all text documents in another file
 class Deck {
     constructor(name, id, sprites, tournament, date) {
         this.name = name;
