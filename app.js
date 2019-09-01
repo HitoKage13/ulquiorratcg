@@ -72,6 +72,8 @@ var app = new Vue({
         "2018 Top 16 Brisbane Regionals","2019 Top 16 Brisbane Regionals",
         "2019 Top 8 Perth Regionals","2019 Top 32 Sydney Regionals"],
         deckCol: [
+            new Deck('Mew & Mewtwo-GX Toolbox', 19, ["PokemonShuffleSprites/156.png","PokemonShuffleSprites/155.png"],
+            "2019 Worlds Testing", "N/A"),
             new Deck('Zapdos / Ultra Beasts', 18, ["PokemonShuffleSprites/150.png","PokemonShuffleSprites/1128.png","PokemonShuffleSprites/1127.png"],
             "2019 Sydney Regionals", "18/05/19"),
             new Deck('Zapdos / Lycanroc-GX', 17, ["PokemonShuffleSprites/150.png","PokemonShuffleSprites/1153.png"],
@@ -112,6 +114,12 @@ var app = new Vue({
             "Top 8 Q1 Newcastle Cup", "08/09/18")
         ],
         deckList: [
+            new List(19,["3 Mew & Mewtwo-GX","2 Dedenne-GX","1 Reshiram & Charizard-GX",
+            "1 Espeon & Deoxys-GX","1 Solgaleo-GX","1 Naganadel-GX","1 Latios-GX",
+            "1 Jirachi-GX","1 Dragonite-GX","1 Mew","1 Mimikyu","1 Marshadow","---"],
+            ["4 Welder","4 Lillie","4 Cherish Ball","4 Acro Bike","4 Mysterious Treasure",
+            "4 Custom Catcher","4 Viridian Forest","3 Escape Board","2 Reset Stamp","---"],
+            ["8 Psychic Energy","4 Fire Energy"]),
             new List(18,["4 Jirachi","3 Zapdos","1 Buzzwole","1 Nihilego",
             "1 Tapu Koko-GX","1 Tapu Koko Prism Star","1 Marshadow","1 Mew",
             "1 Absol","---"],
@@ -241,6 +249,137 @@ var app = new Vue({
             ["4 Fighting Energy","4 Double Colorless Energy"]),
         ],
         blogPosts: [
+            new Post(7,"29/05/19","The Birds and the Beasts",`
+            <a href="https://ocepost.home.blog/2019/05/29/the-birds-and-the-beasts-a-study-of-zapbeasts-jeremy-lim/#more-104"
+            target="_blank"><u>Original article</u></a> </br>
+            Hi again, in this article, I want to go through an in-depth study into
+            the ZapBeasts variant I piloted to a Top 32 finish (and Christian to
+            a Top 8 finish). Firstly, I'd like to give some credit to Christian,
+            as he built the final 60 to be used for the tournament. Whilst I had
+            some ideas with how the deck was developed and worked on a few niche
+            matchups, he tested the deck heavily and it is definitely the perfect
+            60 for the Regionals. </br> </br> <b>Why Viridian?</b></br>
+            The card that really separates this deck from the traditional build
+            is the 3 Viridian, 1 Shrine. It is built much like the ZapRoc variants
+            seen in the SUM-TEU meta, which maximises grabbing Energy consistently
+            over extra chip damage. The 1-of Fighting and Psychic Energy meant that
+            you never whiff the Buzzwole and Nihilego turn if you had Viridian up.
+            Zapdos relies on the strength of using Guzma every turn if it had a
+            chance to, and being able to search out Energy through Viridian or
+            even Jirachi (for the Stadium) rather than using draw cards (Volkner
+            and Lillie) is a stronger strategy to go with. The tech Shrine
+            allowed you to hit the 270 damage needed for ReshiZard in a pinch.
+            </br> </br> <b>One-of Energies</b> </br>
+            The one-of Energies being prized is normally not an issue. Since the
+            Psychic is used late-game, you often hope it's in the first 3-4 Prizes
+            you take, which is a fair call to make. Due to the way the deck is
+            built, you normally don't even need both Ultra Beasts to win you the
+            game, and Beast Energy is often enough by itself! In one notable game,
+            I was on 6 prizes while my opponent was on 5. I used a Zapdos with 3
+            Electropowers to KO a ReshiZard in order to get down to 3 prizes; also
+            grabbing a Fighting Energy from prizes. My opponent KO'd me, putting
+            himself to 4 prizes, and I was able to effectively use the Fighting
+            and Buzzwole to take a Volcanion KO. </br> </br> <b>How's the mirror?</b> </br>
+            Honestly, it's great. I don't think I've ever worried about the
+            mirror. This is due to the addition of Absol as a tech card; which
+            many ZapBeasts lists have removed. I think over many games, the Absol
+            will prove to be a pain to their Jirachis, as you will be able to
+            Stellar Wish more times than they will, accumulating resources to
+            strengthen your hand. </br> </br> <b>What do I do in the big matchups?</b>
+            </br> ReshiZard (60-40): Whenever you can, hit 110 on a ReshiZard with
+            Zapdos and a Choice Band (NOT AN ELECTROPOWER). If they don't heal it,
+            it threatens a Tapu Koko-GX KO with a damage modifier. You can take a
+            Prize on a Volcanion with 2 Electropowers and another with the Sledgehammer
+            turn. Through these methods, you can easily take 5 Prizes and can take the
+            last one through a 2HKO or Nihilego KO. </br> </br>
+            PikaRom (65-35): Mew tilts the matchup in your favour a lot, as they
+            cannot Tag Bolt for 2 Prizes now. However, you only want to bench Mew
+            only when they threaten a large Tag Bolt GX KO, as you want to avoid
+            any premature KOs on Mew. Buzzwole's Sledgehammer will always trigger
+            if you correctly time Mew and is necessary to swing the matchup around.
+            Save your Electropowers for any Zapdos KOs and use Tapu Koko-GX against
+            large Energy spreads. </br> </br>
+            Zoroark (35-65): Be sure to KO their Dittos and Grimers when they
+            bench it down. You can prioritise Mew, as long as they don't threaten
+            Muk, because you will definitely lose when they have Muk AND Judge out.
+            If you foresee a Muk, you should try and hold 2 Electropowers and a
+            Guzma to take a clean KO on it. </br> </br>
+            Weezing (35-65): You want to bench Pokemon only when necessary and
+            do 110 damage on as many Weezings as you can. This allows you to sweep
+            with Mew later in the game with Psypower. If your Bench size is small,
+            you could potentially threaten KOs with Tapu Koko-GX and even a Let Loose,
+            as they will often 3HKO you (without Band). </br> </br>
+            Baby Blacephalon (50-50): Use Marshadow skilfully to brick them whilst
+            you cripple their board setup. You can hit Blacephalons for 110 with an
+            Electropower to set up Mew's Psypower in order to avoid Wishing Baton.
+            </br> </br> <b>Conclusion</b> </br> Now that the list is public, I want
+            people to play ZapBeasts properly and this article should assist in
+            the gameplans needed for the big matchups (in the Australian meta).
+            I don't believe it's a strong play against the new Lucario/Melmetal
+            mill lists or Shedinja Control, but if you have any questions about
+            this deck, be sure to reach out to Christian or I :)`),
+            new Post(6,"16/05/19","Extinguishing the Fire",`
+            <a href="https://ocepost.home.blog/2019/05/16/extinguishing-the-fire-techs-to-beat-reshizard-jeremy-lim/#more-62"
+            target="_blank"><u>Original article</u></a>
+            </br> Hey guys, my name is Jeremy,
+            and I'm a competitive player from Sydney! I want my first article for
+            this site to outline the ways that you can beat Reshiram & Charizard-GX -
+            probably the most highly anticipated deck going in to Sydney Regionals.
+            With the release of strong Fire-type support such as Welder, Fire Crystal,
+            Volcanion and even the recent Fiery Flint, Reshiram & Charizard GX is a
+            power behemoth. </br> </br>Below, I have outlined some techs you can
+            include in your deck and different approaches you can take to defeat
+            Reshiram & Charizard GX. </br> </br> <b>Slowking</b>
+            </br>Psychic can OHKO a fully charged up ReshiZard, as it does a clean
+            280 damage. All you need is a Triple Acceleration Energy, and all they
+            need is 4 energy cards attached. Memory Melt also has some utility -
+            it costs 1 water energy and allows you to Lost Zone any card. This is
+            very useful in grindy, control matchups, as you can run them out of
+            energy cards or resources like Lusamine and Guzma. Combine Memory Melt
+            with Guzma to act as a late-game win condition by trapping an opponent’s
+            Pokemon in the active position and stripping them out of resources.
+            Teched in: Zoroark, any deck with Triple Acceleration Energy </br> </br>
+            <b>Mimikyu/Nihilego</b> </br> Mimikyu and Nihilego both serve
+            the same purpose. With just one, low cost attack, they can deal huge
+            amounts of damage to (or even OHKO) a Reshizard. Ideally, you want to
+            hold the Mimikyu or Nihilego in hand until they can be utilized to
+            their full potential. </br> </br> Mimikyu can be combined with
+            Choice Band, Shrine of Punishment, or even a Distortion Door Giratina
+            to hit that clean 270 damage. It's more important to hold onto the
+            surprise factor, as it's quite easy to play around Mimikyu, so you
+            should seek to plan ahead to maximise its usefulness. Some ways to
+            bait out the ReshiZard KO is through using Ultra Necrozma GX to take
+            a KO, forcing the ReshiZard player to retaliate. </br> </br>
+            Teched in: Ultra Malamar, Counter Box, Spread Malamar </br> </br>
+            Nihilego is often used in Zapdos, to hit those crucial high numbers;
+            important for a deck that can only consistently deal 80 damage without
+            modifiers. It allows for the most versatile applications, allowing you
+            to utilise it effectively in more than just the ReshiZard matchup.
+            It can hit the magic 270 with Choice Band/Beast Energy and Shrine of
+            Punishment, but you should plan ahead to use it when your opponent
+            gets to 2 Prizes. </br> </br> Teched in: Zapdos/Ultra Beasts, Beast Box
+            </br> </br> <b>Tapu Koko-GX</b> </br>
+            Not necessarily a tech, but it should definitely be used for its
+            Tapu Thunder GX attack to take out a surprise knockout on a ReshiZard.
+            With ReshiZard's reliance on having energy cards in play, a well-timed
+            Aero Trail can cripple their setup instantly. </br> </br>
+            Used in: Zapdos variants, Pikachu & Zekrom </br> </br> <b>Choice Helmet</b>
+            </br> </br> For Tag Team based decks, you really want a way to survive
+            the 230 damage threshold. With Choice Band, you effectively need 270 or
+            more HP to outlast Flare Strike. Assuming the ReshiZard player runs only
+            1 Field Blower, Choice Helmet could stick for one or more turns. Most
+            ReshiZard variants do not run Green's Exploration due to reliance on
+            Welder and Dedenne-GX or Tapu Lele-GX, meaning the Tool can stick with
+            foresight. </br> </br> Teched in: Gardevoir & Sylveon-GX, Pikachu & Zekrom-GX
+            </br> </br> I hope this article highlights some weaknesses that
+            ReshiZard will undoubtedly face and that big damage often doesn't
+            translate to an unbeatable deck. Overall, the theme within the article
+            is that single-prize attackers will still have the edge on ReshiZard,
+            and decks like QuagNag and Giratina-heavy Malamar may end up being the
+            ones to keep it in check. For future articles, I'm thinking of writing
+            a guide on how to pick a deck for major events using meta analysis of
+            an overall format, either generally or with an example of personal
+            experience. </br> </br> Thanks for reading and I hope to be back soon!`),
             new Post(5,"19/03/19","Stellar Wishes of Competition",`Perth Regionals
             has come and gone, and I am very happy about my tournament run the
             past weekend. It was my first Top 8 in a modern-era Regional and was
